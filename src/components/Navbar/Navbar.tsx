@@ -24,7 +24,7 @@ const Navbar = (props: NavbarType) => {
 
           <div className='navbar-buttons'>
             {!props.isLogin &&
-              <PrimaryButton value='Login'/>
+              <PrimaryButton value='Login' width="auto" height="40px"/>
             }
           </div>
 

@@ -6,7 +6,9 @@ import './PrimaryButton.css'
 
 const PrimaryButton = (props: ButtonType) => {
   return (
-    <button className="primary-button" role="button">{props.value}</button>
+    <button className="primary-button" role="button" style={{width:props.width, height:props.height}}>
+        {props.value}
+    </button>
   )
 }
 
