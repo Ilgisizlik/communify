@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 //components
 import PrimaryButton from '../Buttons/PrimaryButton/PrimaryButton'
+import SecondaryButton from '../Buttons/SecondaryButton/SecondaryButton'
 
 type NavbarType = {
   isLogin: boolean,
@@ -24,7 +25,10 @@ const Navbar = (props: NavbarType) => {
 
           <div className='navbar-buttons'>
             {!props.isLogin &&
-              <PrimaryButton value='Login' width="auto" height="40px"/>
+              <>
+                <PrimaryButton value='Login' width="120px" height="40px" />
+                <SecondaryButton value='Sign Up' width="120px" height="40px" />
+              </>
             }
           </div>
 
