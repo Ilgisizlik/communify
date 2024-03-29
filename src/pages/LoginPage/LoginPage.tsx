@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import PrimaryButton from '../Buttons/PrimaryButton/PrimaryButton';
-import SecondaryButton from '../Buttons/SecondaryButton/SecondaryButton';
+import PrimaryButton from '../../components/Buttons/PrimaryButton/PrimaryButton';
+import SecondaryButton from '../../components/Buttons/SecondaryButton/SecondaryButton';
 
-const LoginForm: React.FC = () => {
+const LoginPage = () => {
     const [formData, setFormData] = useState({
         userName: "",
         password: ""
@@ -65,6 +65,7 @@ const LoginForm: React.FC = () => {
                     />
                     {errors.password && <span>{errors.password}</span>}
                 </div>
+                
                <PrimaryButton value='Login' height={'30px'} width={'120px'} onClickFunction={()=>{}} /> 
                <SecondaryButton value='Register here' height={'10px'} onClickFunction={()=>{}} width={'100px'}/>
             </form>
@@ -72,4 +73,4 @@ const LoginForm: React.FC = () => {
     );
 };
 
-export default LoginForm;
+export default LoginPage;
