@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//components
 import PrimaryButton from '../../components/Buttons/PrimaryButton/PrimaryButton';
 import SecondaryButton from '../../components/Buttons/SecondaryButton/SecondaryButton';
 
@@ -65,9 +66,9 @@ const LoginPage = () => {
                     />
                     {errors.password && <span>{errors.password}</span>}
                 </div>
-                
-               <PrimaryButton value='Login' height={'30px'} width={'120px'} onClickFunction={()=>{}} /> 
-               <SecondaryButton value='Register here' height={'10px'} onClickFunction={()=>{}} width={'100px'}/>
+
+               <PrimaryButton value='Login' fontSize={14} height={'30px'} width={'200px'} onClickFunction={()=>{}} /> 
+               <SecondaryButton value='Register here' fontSize={14} height={'30px'} width={'200px'} onClickFunction={()=>{}}/>
             </form>
         </div>
     );

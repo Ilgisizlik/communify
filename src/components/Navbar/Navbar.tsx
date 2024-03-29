@@ -27,8 +27,8 @@ const Navbar = (props: NavbarType) => {
           <div className='navbar-buttons'>
             {!props.isLogin &&
               <>
-                <PrimaryButton value='Login' width="120px" height="40px" onClickFunction={() => navigate("/login")}/>
-                <SecondaryButton value='Sign Up' width="120px" height="40px" onClickFunction={() => navigate("/register")}/>
+                <PrimaryButton value='Login' fontSize={16} width="120px" height="40px" onClickFunction={() => navigate("/login")}/>
+                <SecondaryButton value='Sign Up' fontSize={16} width="120px" height="40px" onClickFunction={() => navigate("/register")}/>
               </>
             }
           </div>
