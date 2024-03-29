@@ -20,11 +20,11 @@
   }
   
   .secondary-button:hover {
-    color: #21818a;
-    border-color: #21818a;
+    color: #175a60;
+    border-color: #175a60;
   }
   
   .secondary-button:active {
-    background-color: #f2f5f5;
+    background-color: #edecec;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   }

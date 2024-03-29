@@ -20,10 +20,10 @@
   }
   
   .primary-button:hover {
-    background-color: rgb(48, 169, 180);
+    background-color: #237c84;
   }
   
   .primary-button:active {
-    background-color: rgb(43, 164, 175);
+    background-color: #28838c;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   }
