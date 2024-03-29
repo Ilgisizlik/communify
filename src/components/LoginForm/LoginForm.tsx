@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 //components
-import PrimaryButton from '../../components/Buttons/PrimaryButton/PrimaryButton';
-import SecondaryButton from '../../components/Buttons/SecondaryButton/SecondaryButton';
+import PrimaryButton from '../Buttons/PrimaryButton/PrimaryButton';
+import SecondaryButton from '../Buttons/SecondaryButton/SecondaryButton';
 
-const LoginPage = () => {
+const LoginForm = () => {
     const [formData, setFormData] = useState({
         userName: "",
         password: ""
@@ -68,10 +68,10 @@ const LoginPage = () => {
                 </div>
 
                <PrimaryButton value='Login' fontSize={14} height={'30px'} width={'200px'} onClickFunction={()=>{}} /> 
-               <SecondaryButton value='Register here' fontSize={14} height={'30px'} width={'200px'} onClickFunction={()=>{}}/>
+               <SecondaryButton value='Join Us' fontSize={14} height={'30px'} width={'200px'} onClickFunction={()=>{}}/>
             </form>
         </div>
     );
 };
 
-export default LoginPage;
+export default LoginForm;
