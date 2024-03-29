@@ -1,0 +1,12 @@
+/* styles.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  
