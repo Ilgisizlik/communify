@@ -4,9 +4,12 @@ import { ButtonType } from '../ButtonType'
 //css
 import './PrimaryButton.css'
 
+
 const PrimaryButton = (props: ButtonType) => {
   return (
-    <button className="primary-button" role="button" style={{width:props.width, height:props.height}}>
+    <button className="primary-button" role="button" 
+            style={{width:props.width, height:props.height}}
+            onClick={props.onClickFunction}>
         {props.value}
     </button>
   )

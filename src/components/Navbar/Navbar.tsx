@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 //css
 import './Navbar.css'
 //components
@@ -11,6 +11,7 @@ type NavbarType = {
 }
 
 const Navbar = (props: NavbarType) => {
+  const navigate = useNavigate()
 
   return (
     <>
@@ -26,8 +27,8 @@ const Navbar = (props: NavbarType) => {
           <div className='navbar-buttons'>
             {!props.isLogin &&
               <>
-                <PrimaryButton value='Login' width="120px" height="40px" />
-                <SecondaryButton value='Sign Up' width="120px" height="40px" />
+                <PrimaryButton value='Login' width="120px" height="40px" onClickFunction={() => navigate("/login")}/>
+                <SecondaryButton value='Sign Up' width="120px" height="40px" onClickFunction={() => navigate("/register")}/>
               </>
             }
           </div>
