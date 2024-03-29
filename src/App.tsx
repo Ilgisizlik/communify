@@ -1,9 +1,13 @@
+import { Roles } from "./models/entityModels/Token";
+import RouterManager from "./routers/RouterManager";
+
 function App() {
+  let userRoles : Roles[] = []
 
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <RouterManager isLogin={false} userRoles={userRoles}></RouterManager>
+    </>
   );
 }
 
